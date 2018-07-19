@@ -1,0 +1,290 @@
+body {
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/*page title*/
+h1 {
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	margin: 0 auto;
+}
+
+/*page title*/
+.titlespace h1 {
+	padding-left: 481px;
+}
+
+/*growing tips*/
+h2 {
+	color: green;
+}
+
+/*questions*/
+h3 {
+	text-align: center;
+	color: black;
+}	
+
+/*general text*/
+p {
+    width: 650px;
+	color: #008080;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 19px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*image borders*/
+img {
+	border-radius: 25px;
+}
+
+/*copyright*/
+#footer {
+	position: fixed;
+    bottom: 0;
+    right: 0;
+	background-color: #fff0fe;
+}
+
+/*homepage sign up*/
+.loginreg:link {
+    color: #53bd83;
+    background-color: transparent;
+    text-decoration: none;
+}
+.loginreg:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+.loginreg:hover {
+    color: #864167;
+    background-color: transparent;
+}
+.loginreg:active {
+    color: #C64A48;
+    background-color: transparent;
+}
+
+/*centering general text*/
+.centertext {
+	width: 650px;
+	color: #008080;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 19px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*navigation menu*/
+.navbtn {
+	position: fixed;
+    background-color: #864167;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.navmenu {
+    position: relative;
+    display: inline-block;
+}
+
+/*opening dropdown menu options*/
+.navmenu-content {
+    display: none;
+    position: absolute;
+	position: fixed;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	margin-top: 50px;
+}
+
+.navmenu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navmenu-content a:hover {
+	background-color: #00b386;
+	color: white;
+}
+
+.navmenu:hover .navmenu-content {
+    display: block;
+}
+
+.navmenu:hover .navbtn {
+    background-color: #008080;
+}
+
+/*account sign up*/
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: #4CAF50;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	outline: none;
+	background-color: #4CAF50;
+    border-radius: 15px;
+}
+
+/*on-click of both buttons*/
+.button:active {
+   box-shadow: 0 5px #666;
+   transform: translateY(4px);
+}
+ /*login button*/
+.login {
+    background-color: white; 
+    color: black; 
+    border: 4px solid #4CAF50;
+}
+
+.login:hover {
+	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24),0 8px 25px 0 rgba(0,0,0,0.19);
+	border: 4px solid #555555;
+}
+
+/*register button*/
+.register {
+    background-color: white;
+    color: black;
+    border: 4px solid #864167;
+}
+
+.register:hover {
+	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24),0 8px 25px 0 rgba(0,0,0,0.19);
+	border: 4px solid #555555;
+}
+
+/*homepage button*/
+.homepg {
+    background-color: white; 
+    color: black; 
+    border: 4px solid #4CAF50;
+}
+
+.homepg:hover {
+	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24),0 8px 25px 0 rgba(0,0,0,0.19);
+	border: 4px solid #555555;
+}
+
+/*upload button*/
+.uploadph {
+    background-color: white;
+    color: black;
+    border: 4px solid #864167;
+}
+
+.uploadph:hover {
+	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24),0 8px 25px 0 rgba(0,0,0,0.19);
+	border: 4px solid #555555;
+}
+
+/*herb photos*/
+#herbs {
+    text-align:center;
+}
+
+.herbnames p {
+	color: black;
+}
+
+/*tooltip text on herb facts page*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+	margin-top: 45px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 115%;
+	font-size: 16px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent grey transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*social media buttons*/
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 10px 15px;
+  border-radius: 40%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
